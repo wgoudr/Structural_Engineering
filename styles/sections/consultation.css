@@ -1,0 +1,81 @@
+#consultation {
+    display: flex;
+    height: auto;
+    min-height: 100vh;
+    padding: 2rem 0;
+    flex-direction: column;
+    color: #ecf0f1;
+}
+
+.consultation-container {
+    width: 100%;
+    padding: 1rem;
+    align-items: start;
+}
+
+.consultation-info {
+    width: 90%;
+    margin-bottom: 2rem;
+}
+
+.consultation-title {
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.consultation-item {
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+.consultation-image {
+    width: 100%;
+    height: 300px;
+    order: -1;
+}
+
+.consultation-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+    #consultation {
+        flex-direction: row;
+        height: 110vh;
+        padding: 0;
+    }
+
+    .consultation-container {
+        width: 50%;
+        align-items: start;
+        justify-content: center;
+        padding: 2rem;
+        margin-left: auto; /* Pushes container to right side */
+    }
+
+    .consultation-info {
+        width: 80%;
+        margin-bottom: 0;
+        padding-left: 2rem; /* Creates gap between content and image */
+    }
+
+    .consultation-title {
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+
+    .consultation-item {
+        font-size: 1.25rem;
+        padding-top: 2.5rem;
+    }
+
+    .consultation-image {
+        width: 50vw;
+        height: auto;
+        order: 0;
+        margin-right: auto; /* Pushes image to left side */
+    }
+}

@@ -1,0 +1,173 @@
+/* ===== Hero Section ===== */
+#hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Prevent background image overflow */
+}
+
+/* Background Image */
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintains aspect ratio */
+  z-index: 0; /* Behind content */
+  object-position: center 50%; /* Centers horizontally, moves down 50% vertically */ /* Adjusted vertical position */
+  filter: brightness(0.7);
+}
+
+/* Content Container */
+.hero-container {
+  width: 85%; /* Increased default width for better flow */
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1; /* Above background */
+  padding: 1rem; /* Add some default padding */
+}
+
+/* Main Content */
+.hero-content {
+  text-align: center;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+  margin: 1rem; /* Reduced default margin */
+}
+
+/* Features Grid */
+.hero-features {
+  display: flex;
+  flex-wrap: wrap; /* Allow features to wrap to the next line */
+  gap: 1rem; /* Slightly reduced gap */
+  margin: 1.5rem; /* Slightly reduced margin */
+  justify-content: center; /* Center features on smaller screens */
+}
+
+.hero-features > * { /* Target direct children of hero-features (likely feature items) */
+  flex: 1 1 auto; /* Distribute space evenly, allow items to grow and shrink */
+  min-width: 200px; /* Ensure a minimum width for each feature item */
+}
+
+/* Typography */
+.hero-content h1 {
+  font-size: 3rem; /* Slightly reduced default font size */
+  margin-bottom: 0.8rem; /* Slightly reduced margin */
+}
+
+.hero-content p { /* Add styling for potential paragraph text */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Active State */
+#hero.section-visible .hero-content {
+  opacity: 1;
+  transform: none;
+}
+
+@media (max-width: 992px) { /* Adjust for medium-sized screens (tablets) */
+  .hero-content h1 {
+    font-size: 2.75rem;
+  }
+
+  .hero-features {
+    margin: 1rem;
+    gap: 0.8rem;
+  }
+
+  .hero-features > * {
+    min-width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  .hero-content {
+    margin: 0.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-features {
+    /* Removed grid-template-columns: 1fr; */
+    flex-direction: column; /* Stack features vertically on smaller screens */
+    align-items: center; /* Center the features */
+    margin: 1rem;
+    gap: 1rem;
+  }
+
+  .hero-features > * {
+    min-width: auto; /* Allow full width for stacked items */
+    width: 80%; /* Adjust width of stacked feature items */
+  }
+}
+
+@media (max-width: 576px) { /* Adjust for smaller screens (phones) */
+  #hero {
+    height: auto; /* Allow height to adjust based on content */
+    padding: 2rem 0; /* Add some vertical padding */
+  }
+
+  .hero-bg {
+    object-position: center 30%; /* Adjust background image position */
+  }
+
+  .hero-container {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .hero-content {
+    margin: 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .hero-features {
+    margin: 1rem 0;
+    gap: 0.75rem;
+  }
+
+  .hero-features > * {
+    width: 90%;
+  }
+}
+
+@media (max-width: 360px) { /* Adjust for very small screens */
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.85rem;
+  }
+
+  .hero-features > * {
+    width: 95%;
+  }
+}

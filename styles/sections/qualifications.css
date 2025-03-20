@@ -1,0 +1,144 @@
+#qualifications {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.qualification-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  gap: 1.5rem;
+  padding: 1rem;
+  width: 60%; /* Back to the original width for larger screens */
+  margin-top: 3%; /* Slightly reduced top margin */
+  /* Removed margin-left and margin-right to keep left alignment */
+}
+
+.qualification-title {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 0;
+  /* Removed text-align: center; */
+}
+
+.qualification-title h2 {
+  padding-bottom: 1rem;
+  padding-left: 2rem; /* Back to original left padding */
+  font-size: 2.5rem;
+}
+.qualification-title h4 {
+  font-size: 1.5rem;
+  padding-left: 2rem; /* Back to original left padding */
+}
+
+.qualifications-list {
+  display: flex;
+  justify-content: flex-start; /* Keep list items aligned to the left */
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.qualifications-list li {
+  font-size: 1rem;
+  padding: 0.8rem;
+}
+
+.qualification-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(0.7);
+}
+
+.translucent-box {
+  background-color: #ecf0f1;
+  opacity: 0.9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+/* Media query for screens up to 768px */
+@media (max-width: 768px) {
+  .qualification-container {
+    width: 95%;
+    margin-top: 2%;
+    padding: 1.5rem;
+  }
+
+  .qualification-title {
+    font-size: 1.8rem;
+    padding: 1.5rem;
+    text-align: center; /* Center the title on smaller screens for better readability */
+  }
+
+  .qualification-title h2 {
+    font-size: 2.2rem;
+    padding-bottom: 0.8rem;
+    padding-left: 0; /* Remove left padding for centering */
+  }
+  .qualification-title h4 {
+    font-size: 0.8rem;
+    padding-left: 0; /* Remove left padding for centering */
+  }
+
+  .qualifications-list {
+    padding: 1rem;
+    gap: 0.6rem;
+    justify-content: center; /* Center list items on smaller screens */
+  }
+
+  .qualifications-list li {
+    font-size: 0.85rem;
+    padding: 0.6rem;
+  }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 576px) {
+  #qualifications {
+    min-height: auto;
+  }
+
+  .qualification-container {
+    width: 100%;
+    margin-top: 0;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .qualification-title {
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+
+  .qualification-title h2 {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+  }
+  .qualification-title h4 {
+    font-size: 0.75rem;
+  }
+
+  .qualifications-list {
+    padding: 0.8rem;
+    gap: 0.5rem;
+  }
+
+  .qualifications-list li {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+}
