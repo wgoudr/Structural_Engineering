@@ -1,0 +1,49 @@
+#consultation {
+    display: flex;
+    height: auto;    
+    flex-direction: column;
+    min-height: 100vh; 
+    color: #ecf0f1;
+    padding-top: 6rem;
+    padding-bottom: 6rem;    
+}
+
+.consultation-container {
+    width: 50%;
+    padding: 1rem;
+    margin-left: 25%;
+}
+
+.consultation-info {
+    margin-bottom: 2rem;
+}
+
+.consultation-title {
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.consultation-div{
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: #253646;
+}
+
+.consultation-item {
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+.consultation-image {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    order: -1;
+    filter: brightness(0.7);
+}
+
+.consultation-image img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}

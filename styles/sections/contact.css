@@ -1,0 +1,84 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; You can remove this as the parent will handle vertical centering */
+  width: 100%; /* Allow form-container to take full width initially */
+  max-width: 800px; /* Optional: Limit the maximum width of the form container */
+  height: 60vh;
+}
+
+#contact {
+  height: 100vh;
+  padding: 4rem 2rem;
+  background: var(--primary-blue);
+  color: white;
+  display: flex; /* Make #contact a flex container */
+  flex-direction: column; /* Arrange items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+  
+#contact h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: white;
+}
+  
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Make the form take full width of its container */
+  gap: 1.5rem;
+}
+  
+  #contact-form input,
+  #contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-family: var(--font-primary);
+    transition: all 0.3s;
+  }
+  
+  #contact-form input::placeholder,
+  #contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  #contact-form input:focus,
+  #contact-form textarea:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  #contact-form button {
+    padding: 1rem 2.5rem;
+    background: var(--accent-blue);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  #contact-form button:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    #contact {
+      padding: 4rem 1rem;
+    }
+    
+    #contact-form {
+      gap: 1rem;
+    }
+  }
