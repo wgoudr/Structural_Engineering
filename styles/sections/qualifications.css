@@ -20,8 +20,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 0;
-  /* Removed text-align: center; */
+  margin-top: 3rem;
 }
 
 .qualification-title h2 {
@@ -52,85 +51,115 @@
   height: 100%;
   object-fit: cover;
   z-index: 0;
-  filter: brightness(0.7);
+  filter: brightness(0.65);
 }
 
-.translucent-box {
-  background-color: #ecf0f1;
-  opacity: 0.9;
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 6px;
-  margin-bottom: 0.5rem;
-}
 
-/* Media query for screens up to 768px */
-@media (max-width: 768px) {
+@media (max-width: 1920px) {
   .qualification-container {
-    width: 95%;
+    width: 55%;
   }
+}
 
-  .qualification-title {
-    font-size: 1.8rem;
-    padding: 1.5rem;
-    text-align: center; /* Center the title on smaller screens for better readability */
+@media (max-width: 1440px) {
+  .qualification-container {
+    width: 60%;
   }
-
   .qualification-title h2 {
-    font-size: 2.2rem;
-    padding-bottom: 0.8rem;
-    padding-left: 0; /* Remove left padding for centering */
+    font-size: 3rem;
   }
-  .qualification-title h4 {
-    font-size: 0.8rem;
-    padding-left: 0; /* Remove left padding for centering */
+  .qualification-title h3 {
+    font-size: 1.2rem;
   }
+  .qualifications-list li {
+    font-size: 1rem;
+  }
+}
 
+@media (max-width: 1024px) {
+  .qualification-container {
+    width: 70%;
+    gap: 1rem;
+  }
+  .qualification-title {
+    margin-top: 2rem;
+  }
+  .qualification-title h2 {
+    font-size: 1.8rem;
+    padding-bottom: 0.8rem;
+  }
+  .qualification-title h3 {
+    font-size: 1.1rem;
+  }
   .qualifications-list {
     padding: 1rem;
     gap: 0.6rem;
-    justify-content: center; /* Center list items on smaller screens */
   }
-
   .qualifications-list li {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     padding: 0.6rem;
   }
 }
 
-/* Media query for even smaller screens */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   #qualifications {
-    min-height: auto;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
   }
-
   .qualification-container {
-    width: 100%;
-    margin-top: 0;
-    padding: 1rem;
-    gap: 1rem;
+    width: 85%;
+    gap: 0.8rem;
   }
-
   .qualification-title {
-    font-size: 1.6rem;
-    padding: 1rem;
+    margin-top: 1.5rem;
   }
-
   .qualification-title h2 {
-    font-size: 2rem;
-    padding-bottom: 0.5rem;
+    font-size: 1.6rem;
+    padding-bottom: 0.6rem;
   }
-  .qualification-title h4 {
-    font-size: 0.75rem;
+  .qualification-title h3 {
+    font-size: 1rem;
+    padding-left: 1.5rem;
   }
-
   .qualifications-list {
     padding: 0.8rem;
     gap: 0.5rem;
   }
-
   .qualifications-list li {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #qualifications {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+  .qualification-container {
+    width: 95%;
+    gap: 0.6rem;
+  }
+  .qualification-title {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .qualification-title h2 {
+    font-size: 1.4rem;
+    padding-bottom: 0.4rem;
+  }
+  .qualification-title h3 {
+    font-size: 0.9rem;
+    padding-left: 0;
+  }
+  .qualifications-list {
+    padding: 0.6rem;
+    gap: 0.4rem;
+    justify-content: center;
+    text-align: left;
+  }
+  .qualifications-list li {
+    font-size: 0.85rem;
+    padding: 0.4rem;
   }
 }

@@ -18,20 +18,10 @@
     margin-bottom: 2rem;
 }
 
-.consultation-title {
-    padding: 0.5rem 0;
-    font-size: 1.5rem;
-}
-
 .consultation-div{
     padding: 1rem;
     border-radius: 6px;
     background-color: #253646;
-}
-
-.consultation-item {
-    font-size: 1rem;
-    padding-top: 1rem;
 }
 
 .consultation-image {
@@ -46,4 +36,174 @@
     width: 100vw;
     height: 100%;
     object-fit: cover;
+}
+
+#consultation-or {
+    margin: 0;
+}
+
+
+@media (max-width: 1920px) {
+  #consultation {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .consultation-container {
+    width: 55%;
+    margin-left: 22.5%;
+  }
+
+  .consultation-image {
+    height: 400px;
+  }
+
+  .consultation-item h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  #consultation {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .consultation-container {
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .consultation-container h2 {
+    font-size: 3rem;
+  }
+
+  .consultation-image {
+    height: 350px;
+  }
+
+  .consultation-item h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  #consultation {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .consultation-container {
+    width: 70%;
+    margin-left: 15%;
+    padding: 0.8rem;
+  }
+
+  .consultation-info {
+    margin-bottom: 1.5rem;
+  }
+
+  .consultation-div {
+    padding: 0.8rem;
+  }
+
+  .consultation-image {
+    height: 300px;
+  }
+
+  .consultation-title h2 {
+    font-size: 1.8rem;
+  }
+
+  .consultation-item h3 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #consultation {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .consultation-container {
+    width: 85%;
+    margin-left: 7.5%;
+    padding: 0.5rem;
+  }
+
+  .consultation-info {
+    margin-bottom: 1rem;
+  }
+
+  .consultation-div {
+    padding: 0.5rem;
+  }
+
+  .consultation-image {
+    height: 250px;
+    order: -1;
+    margin-bottom: 1.5rem;
+  }
+
+  .consultation-image img {
+      width: 100%;
+      object-fit: cover;
+  }
+
+  .consultation-title h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0.8rem;
+  }
+
+  .consultation-item h3 {
+    font-size: 0.85rem;
+    padding: 0.3rem 0;
+  }
+
+  #consultation-or {
+      text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  #consultation {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .consultation-container {
+    width: 95%;
+    margin-left: 2.5%;
+    padding: 0.3rem;
+  }
+
+  .consultation-info {
+    margin-bottom: 0.8rem;
+  }
+
+  .consultation-div {
+    padding: 0.3rem;
+  }
+
+  .consultation-image {
+    height: 200px;
+    margin-bottom: 1rem;
+  }
+
+   .consultation-image img {
+      width: 100%;
+      object-fit: cover;
+  }
+
+  .consultation-title h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .consultation-item h3 {
+    font-size: 0.8rem;
+    padding: 0.2rem 0;
+  }
 }

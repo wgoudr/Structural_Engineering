@@ -1,9 +1,8 @@
 .form-container {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; You can remove this as the parent will handle vertical centering */
-  width: 100%; /* Allow form-container to take full width initially */
-  max-width: 800px; /* Optional: Limit the maximum width of the form container */
+  width: 100%; 
+  max-width: 800px; 
   height: 60vh;
 }
 
@@ -72,13 +71,106 @@
     transform: translateY(-2px);
   }
   
-  /* Mobile Responsiveness */
-  @media (max-width: 768px) {
-    #contact {
-      padding: 4rem 1rem;
-    }
-    
-    #contact-form {
-      gap: 1rem;
-    }
+@media (max-width: 1920px) {
+  #contact {
+    padding: 5rem 3rem;
   }
+
+  #contact h2 {
+    margin-bottom: 3.5rem;
+    font-size: 2.5rem;
+  }
+
+  #contact-form {
+    gap: 1.75rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  #contact {
+    padding: 4rem 3rem;
+  }
+
+  #contact h2 {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+  }
+
+  #contact-form {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  #contact {
+    padding: 3rem 2rem;
+  }
+
+  #contact h2 {
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+  }
+
+  #contact-form {
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #contact {
+    padding: 3rem 1.5rem;
+    height: auto; /* Allow height to adjust on smaller screens */
+  }
+
+  #contact h2 {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .form-container {
+    height: auto; /* Allow height to adjust */
+    max-width: 90%; /* Slightly more constrained on tablets */
+  }
+
+  #contact-form {
+    gap: 1rem;
+  }
+
+  #contact-form input,
+  #contact-form textarea {
+    padding: 0.8rem;
+  }
+
+  #contact-form button {
+    padding: 0.8rem 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #contact {
+    padding: 2rem 1rem;
+  }
+
+  #contact h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  .form-container {
+     max-width: 100%; /* Take full width on mobile */
+  }
+
+  #contact-form {
+    gap: 0.8rem;
+  }
+
+   #contact-form input,
+  #contact-form textarea {
+    padding: 0.7rem;
+  }
+
+  #contact-form button {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}

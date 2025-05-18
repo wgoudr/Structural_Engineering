@@ -3,15 +3,15 @@
   flex-direction: column;
   min-height: 100vh;
   color: #ecf0f1;
-  padding-top: 3rem;
+  padding-top: 5rem;
   padding-bottom: 4rem;    
 }
 
 .service-main-title {
-  font-size: 2.5rem;
   width: 50% ;
   margin-left: 25%;
   margin-right: auto;
+  margin-bottom: 2  rem;
   text-align: left; /* Center the main title */
 }
 
@@ -29,10 +29,10 @@
 }
 .service-div {
   display: flex;
-  overflow: hidden;
+  overflow: auto;
   padding: 1rem;
   border-radius: 6px;
-  max-height: 275px;
+  max-height: 300px;
   border-radius: 8px; /* Optional: Add some rounded corners */
   margin-top: 1.5rem;
   background-color: #253646;
@@ -57,141 +57,145 @@
   display: block;
 }
 
-
-
-/* Media query for large desktop and Full HD laptop screens (e.g., 1920px width and below) */
 @media (max-width: 1920px) {
+
+}
+
+@media (max-width: 1440px) {
+
+  .service-main-title {
+    width: 70%;
+    margin-left: 15%;
+  }
+
   .service-container {
-    max-width: 75%; /* Increase width for 1920px and below */
+    max-width: 70%;
+  }
+
+  .service-description li {
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .service-main-title {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .service-container {
+    max-width: 70%;
+  }
+
+  .service-div {
+    max-height: none;
+  }
+
+  .service-info h3 {
+    font-size: 1.3rem;
+  }
+
+  .service-description li {
+    font-size: 0.9rem;
   }
 }
 
-/* Media query for common laptop widths (e.g., 1536px, 1440px width and below) */
-@media (max-width: 1536px) { /* You can use 1440px here if you prefer */
-  .service-container {
-    max-width: 85%; /* Further increase width for smaller laptops */
+@media (max-width: 768px) {
+  #services {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
-}
 
-/* Media query for screens up to 1200px (typical for laptops) */
-@media (max-width: 1200px) {
+  .service-main-title {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 1.5rem;
+  }
+
+  .service-main-title h2 {
+    font-size: 1.8rem;
+  }
+
   .service-container {
     max-width: 90%;
   }
 
   .service-div {
-
-    margin: 0.75rem;
-    padding: 0.75rem;
-  }
-
-  .service-info li {
-    font-size: 0.9rem;
-  }
-}
-
-/* Media query for screens up to 768px (typical for tablets) */
-@media (max-width: 768px) {
-  #services {
-    padding: 1.5rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .service-main-title {
-    font-size: 1.75rem;
-    padding: 1.5rem;
-    padding-top: 2rem;
-  }
-
-  .service-title {
-    font-size: 1.1rem;
-    padding-bottom: 0.8rem;
-  }
-
-  .service-container {
-    max-width: 98%;
-    padding: 0.25rem;
-  }
-
-  .service-div {
-    width: calc(100% - 1rem); /* Full width for single column */
-    margin: 0.5rem;
+    flex-direction: column;
     padding: 0.8rem;
-    /*flex-direction: row; /* Display image and info side by side */
-    align-items: center; /* Align items vertically in the row */
-    height: auto; /* Adjust height based on content */
+    margin-top: 1.2rem;
   }
 
   .service-info {
-    width: 60%; /* Adjust width for info section */
-    padding-left: 1rem; /* Add some space between image and info */
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .service-title h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .service-description ul {
+    padding-left: 1.2rem;
+  }
+
+  .service-description li {
+    font-size: 0.85rem;
+    margin-bottom: 0.3rem;
   }
 
   .service-image {
-    width: 40%; /* Adjust width for image section */
-    height: auto; /* Adjust height based on content */
-  }
-
-  .service-info li {
-    font-size: 0.85rem;
+    width: 100%;
+    border-radius: 4px;
   }
 }
 
-
-/* Media query for screens up to 576px (typical for mobile phones) */
 @media (max-width: 576px) {
   #services {
-    padding: 1rem;
-    padding-bottom: 0;
-    min-height: auto; /* Allow height to adjust */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .service-main-title {
-    font-size: 1.5rem;
-    padding: 1rem;
-    padding-top: 1.5rem;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 1rem;
   }
 
-  .service-title {
-    font-size: 1rem;
-    padding-bottom: 0.6rem;
+  .service-main-title h2 {
+    font-size: 1.5rem;
   }
 
   .service-container {
-    padding: 0;
+    max-width: 95%;
   }
 
   .service-div {
-    flex-direction: column; /* Stack image and info vertically */
-    width: 100%;
-    margin: 0.5rem 0; /* Adjust vertical margin */
-    padding: 0.8rem;
-    align-items: stretch; /* Make items take full width */
+    padding: 0.6rem;
+    margin-top: 1rem;
   }
 
   .service-info {
-    width: 100%; /* Full width for info */
-    padding-left: 0; /* Remove left padding */
-    margin-top: 0.5rem; /* Add some space between image and info */
+    margin-bottom: 0.8rem;
+  }
+
+  .service-title h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .service-description ul {
+    padding-left: 1rem;
+  }
+
+  .service-description li {
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
   }
 
   .service-image {
-    width: 100%; /* Full width for image */
-    height: 200px; /* Set a reasonable fixed height for the image on small screens */
-  }
-
-  .service-info li {
-    font-size: 0.8rem;
-  }
-}
-
-/* Very small screens */
-@media (max-width: 360px) {
-  .service-title {
-    font-size: 0.9rem;
-  }
-
-  .service-info li {
-    font-size: 0.75rem;
+    border-radius: 3px;
   }
 }

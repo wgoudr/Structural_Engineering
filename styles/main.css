@@ -40,9 +40,9 @@ body {
 
   .translucent-box {
     background-color: #ecf0f1;
-    opacity: 0.85; /* Value between 0 (fully transparent) and 1 (fully opaque) */
-    border: 1px solid #ccc; /* Optional: Add a border for better visibility */
-    padding: 10px; /* Optional: Add some padding for the content */
+    opacity: 0.80; /* Value between 0 (fully transparent) and 1 (fully opaque) */
+    border: 1px solid #ccc; 
+    padding: 1rem; 
     border-radius: 6px;
   }
 
@@ -55,7 +55,9 @@ body {
 
   li {
     font-size: 1.25rem;
-    margin-left: 1.25rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
     padding-left: 0.8rem;
   }
 
@@ -67,9 +69,11 @@ body {
     font-size: 3.5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    padding: 1rem;
   }
   h3 {
     font-size: 1.5rem;
     margin-bottom:1rem;
+    padding: 0.5rem;
 
   }
