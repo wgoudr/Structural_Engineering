@@ -39,9 +39,8 @@ body {
   }
 
   .translucent-box {
-    background-color: #ecf0f1;
-    opacity: 0.80; /* Value between 0 (fully transparent) and 1 (fully opaque) */
-    border: 1px solid #ccc; 
+    background-color: #253646;
+    opacity: 0.80; /* Value between 0 (fully transparent) and 1 (fully opaque) */  
     padding: 1rem; 
     border-radius: 6px;
   }
